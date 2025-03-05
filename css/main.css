@@ -25,6 +25,7 @@ a {
   height: 70px;
   z-index: 99999;
   position: fixed;
+  transition: background-color 0.4s ease; /* 배경색 변경에 부드러운 애니메이션 추가 */
 }
 .header .inner .pc-header {
   width: 100%;
@@ -55,7 +56,6 @@ a {
 }
 
 .header.scrolled {
-
   background-color: #6090bd;
 }
 .gnb {

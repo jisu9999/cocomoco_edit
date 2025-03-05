@@ -55,14 +55,21 @@ window.onload = function () {
       },
     },
   });
-  const headerScroll = document.querySelector("header");
-  window.addEventListener("scroll", function () {
-    // navScroll.classList.add("scrolled")
-    // console.log("스크롤 y 값 :", window.scrollY);
-    if (window.scrollY > 680) {
-      headerScroll.classList.add("scrolled");
-    } else {
-      headerScroll.classList.remove("scrolled");
-    }
-  });
+  // const headerScroll = document.querySelector("header");
+  // window.addEventListener("scroll", function () {
+  //   // navScroll.classList.add("scrolled")
+  //   // console.log("스크롤 y 값 :", window.scrollY);
+  //   if (window.scrollY > 750) {
+  //     headerScroll.classList.add("scrolled");
+  //   } else {
+  //     headerScroll.classList.remove("scrolled");
+  //   }
+  // });
 };
+window.addEventListener('scroll', function(){
+  if(window.scrollY > 750){
+    document.querySelector(".header").classList.add("scrolled")
+  }else{
+    document.querySelector(".header").classList.remove("scrolled")
+  }
+})
